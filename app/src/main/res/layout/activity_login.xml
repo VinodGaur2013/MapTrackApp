@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_color"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    tools:context=".Activities.LoginActivity">
+
+    <!--<include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" >
+    </include>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/grad_color_inner"
+                android:layout_gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Welcome"
+                        android:textColor="@android:color/white"
+                        android:textSize="30dp"
+                        android:layout_margin="5dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/google_maps"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|fill"
+                        android:text="This app allow you to draw your route, search your current location and nearby hotels, ATM, pizza hut, bus stop, railway station etc."
+                        android:textColor="@android:color/white"
+                        android:id="@+id/textView2"
+                        android:textSize="12sp"
+                        android:layout_margin="5dp" />
+
+                    <!--<android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">-->
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:background="@drawable/rounded_corner_edittext"
+                        android:textColorHint="@color/hint_text"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:id="@+id/etEmail"
+                        android:layout_margin="10dp"/>
+
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                    <!--<android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">-->
+
+                    <EditText
+                        android:id="@+id/etPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_edittext"
+                        android:layout_margin="10dp"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/hint_text"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="8dp" />
+
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remember me"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/checkBox" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Forget Password"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/tvForget"
+                            android:gravity="right"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="1dp" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_button"
+                            android:text="Login"
+                            android:textSize="20sp"
+                            android:layout_margin="10dp"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/btnSubmit" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:weightSum="2"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Register Account"
+                                android:textColor="@android:color/white"
+                                android:id="@+id/tvSignup"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
